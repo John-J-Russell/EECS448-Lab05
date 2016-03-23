@@ -1,9 +1,11 @@
 <?php
 
 	//stuff goes here
-	echo "Is this working at all?";
+	echo "Is this working at all? <br>";
 	
 	$user=$_POST["username"];
+	
+	echo "you said $user <br>";
 	
 	/*
 	if($user=="")
@@ -24,14 +26,14 @@
 
 	$query = "INSERT INTO Users (user_id) VALUES ( $user )";
 	
-	if ( $mysqli->query($query) == true )
+	if ( $mysqli->query($query) == false )
 	{
 		//do things here?
-		echo "User successfully added";
+		echo "User not successfully added";
 	}
 	else
 	{
-		echo "User name not valid";
+		echo "added now maybe";
 	}
 	
 ?>
