@@ -1,6 +1,7 @@
 <?php
 
 	//stuff goes here
+	echo "Is this working at all?";
 	
 	$user=$_POST["username"];
 	
