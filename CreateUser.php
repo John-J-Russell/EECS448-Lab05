@@ -37,4 +37,5 @@
 		echo "User added to database!";
 	}
 	
+	$mysqli->close();
 ?>

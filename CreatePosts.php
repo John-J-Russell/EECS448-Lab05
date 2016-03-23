@@ -36,6 +36,10 @@
 		echo "USER DOESN'T EXIST, ALSO i FINALLY GOT HTSIS WORKING <BR>";
 		exit();
 	}
+	else
+	{
+		echo "THis would impoly the user name is valid, BUT IT PROBABLY DOESN'T <br>";
+	}
 	
 	//These series of quotes and escape quotes hurt to look at
 	$query = "INSERT INTO Posts (content, author_id)
@@ -51,5 +55,6 @@
 		echo "Post added to database!";
 	}
 	
+	$mysqli->close();
 	
 ?>
