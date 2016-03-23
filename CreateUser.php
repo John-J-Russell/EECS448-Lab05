@@ -1,7 +1,4 @@
 <?php
-
-	//stuff goes here
-	//echo "Is this working at all? <br>";
 	
 	$user=$_POST["username"];
 	
@@ -18,8 +15,8 @@
 	$mysqli = new mysqli("mysql.eecs.ku.edu", "jjrussel", "Critic05", "jjrussel");
 	
 	/* check connection */
-	if ($mysqli->connect_errno) {
-		//printf("Connect failed: %s\n", $mysqli->connect_error);
+	if ($mysqli->connect_errno) 
+	{
 		echo "Could not connect";
 		exit();
 	}
@@ -29,7 +26,6 @@
 	
 	if ( $mysqli->query($query) === false ) //triple equal sign?
 	{
-		//do things here?
 		echo "User not successfully added <br>Name is already taken.";
 	}
 	else
