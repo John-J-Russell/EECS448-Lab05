@@ -1,7 +1,7 @@
 <?php
 
 	//stuff goes here
-	echo "Is this working at all? <br>";
+	//echo "Is this working at all? <br>";
 	
 	$user=$_POST["username"];
 	
@@ -30,11 +30,11 @@
 	if ( $mysqli->query($query) === false ) //triple equal sign?
 	{
 		//do things here?
-		echo "User not successfully added";
+		echo "User not successfully added <br>Name either is blank, or already taken.";
 	}
 	else
 	{
-		echo "added now maybe";
+		echo "User added to database!";
 	}
 	
 ?>
