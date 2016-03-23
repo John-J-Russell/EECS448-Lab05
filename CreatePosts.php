@@ -28,7 +28,7 @@
 	//Damn thing pushes whatever the hell it wants to, no regard for existing foreign key restrictions
 	//Name does not exist? eh, fuck it, push anyways, what's the harm amiright?
 	//THE HARM IS YOU CAN'T DO THAT. STOP DOING WHAT YOU CAN'T DO.
-	
+	/*
 	$preliminaryQuery = "SELECT * FROM Users WHERE user_id LIKE '%" . $user . "%'";
 	
 	if($mysqli->query($preliminaryQuery) === false)
@@ -40,7 +40,7 @@
 	{
 		echo "THis would impoly the user name is valid, BUT IT PROBABLY DOESN'T <br>";
 	}
-	
+	*/
 	//These series of quotes and escape quotes hurt to look at
 	$query = "INSERT INTO Posts (content, author_id)
 	VALUES ( \"" . $content . "\", \"" . $user . "\")";
