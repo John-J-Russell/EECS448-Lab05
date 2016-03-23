@@ -6,9 +6,11 @@
 	<body>
 		<form action="CreatePosts.php" method="post">
 				<p> User ID:</p>
-				<input type="text" name="username" id="user">
+				<input type="text" name="username" id="user" maxlength="255">
 				<p> Post Content (less than 1023 characters, please)</p>
-				<input type="text" name="postcontent" id="post" style="width:80%">
+				<input type="text" name="po" id="post" style="width:80%" maxlength="1023">
+				<textarea rows="7" columns="80" maxlength="1023" name="postcontent">
+				</textarea>
 				<input type="submit" value="Submit">
 		</form>
 	</body>
