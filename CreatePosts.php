@@ -26,7 +26,7 @@
 	
 	//These series of quotes and escape quotes hurt to look at
 	$query = "INSERT INTO Posts (content, author_id)
-	VALUES ( \"" $content "\", \""$user "\")";
+	VALUES ( \"" . $content . "\", \"" . $user . "\")";
 	
 	if ( $mysqli->query($query) === false ) //triple equal sign?
 	{
