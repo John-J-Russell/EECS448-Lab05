@@ -11,7 +11,7 @@
 	}
 	
 	echo "you said $user <br>";
-	echo "Content of post was: \"" . $content . "\"";
+	echo "Content of post was: \"" . $content . "\" <br>";
 	
 	
 	$mysqli = new mysqli("mysql.eecs.ku.edu", "jjrussel", "Critic05", "jjrussel");
