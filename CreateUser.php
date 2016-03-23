@@ -24,7 +24,8 @@
 		exit();
 	}
 
-	$query = "INSERT INTO Users (user_id) VALUES ( $user )";
+	$query = "INSERT INTO Users (user_id) 
+	VALUES ( $user )";
 	
 	if ( $mysqli->query($query) == false )
 	{
