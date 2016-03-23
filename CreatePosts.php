@@ -2,7 +2,7 @@
 
 	
 	$user=$_POST["username"];
-	$content=$_POST["postcontent"]
+	$content=$_POST["postcontent"];
 	
 	if($content=="")
 	{
