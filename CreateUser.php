@@ -25,7 +25,7 @@
 	}
 
 	$query = "INSERT INTO Users (user_id) 
-	VALUES ( $user )";
+	VALUES ( \"" . $user . "\" )";
 	
 	if ( $mysqli->query($query) === false ) //triple equal sign?
 	{
