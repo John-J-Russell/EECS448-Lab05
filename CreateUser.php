@@ -30,7 +30,7 @@
 	if ( $mysqli->query($query) === false ) //triple equal sign?
 	{
 		//do things here?
-		echo "User not successfully added <br>Name either is blank, or already taken.";
+		echo "User not successfully added <br>Name is already taken.";
 	}
 	else
 	{
