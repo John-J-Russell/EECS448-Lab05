@@ -5,11 +5,13 @@
 	
 	$user=$_POST["username"];
 	
+	/*
 	if($user=="")
 	{
 		echo "Invalid entry, name cannot be blank";
 		exit();
 	}
+	*/
 	
 	$mysqli = new mysqli("mysql.eecs.ku.edu", "jjrussel", "Critic05", "jjrussel");
 	
