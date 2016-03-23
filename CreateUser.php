@@ -27,7 +27,7 @@
 	$query = "INSERT INTO Users (user_id) 
 	VALUES ( $user )";
 	
-	if ( $mysqli->query($query) == false )
+	if ( $mysqli->query($query) === false ) //triple equal sign?
 	{
 		//do things here?
 		echo "User not successfully added";
