@@ -17,6 +17,7 @@
 	
 	if ( $result=$mysqli->query($query) ) //triple equal sign?
 	{
+		echo "All current registered users are as follows: <br>";
 		while($row=$result->fetch_assoc())
 		{
 			echo "<br> " . $row[user_id];
