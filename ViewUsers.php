@@ -19,7 +19,7 @@
 	{
 		while($row=$result->fetch_assoc())
 		{
-			echo "<br> $row[\"" . user_id . "\"]";
+			echo "<br> " . $row[user_id];
 		}
 		$result->free();
 	}
