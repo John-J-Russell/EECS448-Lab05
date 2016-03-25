@@ -17,12 +17,12 @@
 	
 	$query = "SELECT post_id, content FROM Posts ORDER by post_id";
 	
-	if ( $result=$mysqli->query($query) ) /
+	if ( $result=$mysqli->query($query) ) 
 	{
 		echo "Post id# and content of selected user \"" . $author_id . "\" are: <br>";
 		while($row=$result->fetch_assoc())
 		{
-			echo $row[post_id] . "|" . $row[content] . "<br>";
+			echo $row[post_id] . " | " . $row[content] . "<br>";
 		}
 		$result->free();
 	}
