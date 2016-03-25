@@ -20,10 +20,16 @@
 	if ( $result=$mysqli->query($query) ) 
 	{
 		echo "Post id# and content of selected user \"" . $author_id . "\" are: <br>";
+		echo "<table style=\"width:100%\">
+				<tr>
+					<td> Post ID</td>
+					<td> Post Content</td>
+				</tr>";
 		while($row=$result->fetch_assoc())
 		{
-			echo $row[post_id] . " | " . $row[content] . "<br>";
+			echo "<tr> <td> " . $row[post_id] . " </td> <td> " . $row[content] . "</td> </tr>";
 		}
+		echo "</table>";
 		$result->free();
 	}
 	else
