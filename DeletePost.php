@@ -27,23 +27,9 @@
 			echo "<br>Something went wrong <br>";
 		}
 	}
-	 //idk finish later
-	/*
-	if ( $result= ) 
-	{
-		echo "Post id# and content of selected user \"" . $author_id . "\" are: <br>";
-		while($row=$result->fetch_assoc())
-		{
-			echo $row[post_id] . " | " . $row[content] . "<br>";
-		}
-		
-	}
-	else
-	{
-		echo "Didn't work.";
-	}
-	*/
+	
 	$mysqli->close();
 
+	echo "<br> <br> <a href=\"DeletePost.html\">Return to last page</a>";
 
 ?>

@@ -31,5 +31,6 @@
 	
 	$mysqli->close();
 
+	echo "<br> <br> <a href=\"AdminHome.html\">Return to Admin Home</a>";
 
 ?>

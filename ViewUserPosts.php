@@ -32,5 +32,7 @@
 	}
 	
 	$mysqli->close();
+	
+	echo "<br> <br> <a href=\"ViewUserPosts.html\">Return to last page</a>";
 
 ?>
