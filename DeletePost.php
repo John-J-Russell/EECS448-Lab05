@@ -21,7 +21,7 @@
 			echo "<br>Deleted post number:  " . $checked[$x] ;
 			
 		}
-		$result->free();
+		//$result->free();
 		else
 		{
 			echo "<br>Something went wrong <br>";
