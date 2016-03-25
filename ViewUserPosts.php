@@ -19,7 +19,7 @@
 	
 	if ( $result=$mysqli->query($query) ) 
 	{
-		echo "Post id# and content of selected user \"" . $author_id . "\" are: <br>";
+		echo "Post id# and content of selected user \"" . $author_id . "\" are: <br> <br>";
 		echo "<table style=\"width:100%\">
 				<tr>
 					<td> Post ID</td>
