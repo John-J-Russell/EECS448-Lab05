@@ -15,7 +15,7 @@
 	
 	
 	
-	$query = "SELECT post_id, content FROM Posts ORDER by post_id";
+	$query = "SELECT post_id, content FROM Posts WHERE author_id = \"" . $author_id . "\" ORDER by post_id";
 	
 	if ( $result=$mysqli->query($query) ) 
 	{
