@@ -8,7 +8,9 @@
 	<body>
 	
 		<form action="ViewUserPosts.php" method="post">
-			<select>
+			See all posts by user:
+			<br>
+			<select name="selectedUser">
 				<!-- inject php -->
 				<?php>
 					$mysqli = new mysqli("mysql.eecs.ku.edu", "jjrussel", "Critic05", "jjrussel");
